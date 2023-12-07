@@ -283,9 +283,9 @@ button a {
 
 .writing-examples {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .writing-examples .the-rapport-room {
@@ -333,6 +333,24 @@ button a {
 	padding-bottom: 30px;
 	border-bottom: solid;
 	border-color: rgb(165, 160, 74);
+}
+
+.writing-examples .capa-blog .writing-list {
+	padding-left: 343px;
+}
+
+.writing-examples .nemi-teas {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+}
+
+.writing-examples .nemi-teas .writing-list {
+	padding-left: 347px;
 }
 
 
