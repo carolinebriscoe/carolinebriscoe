@@ -86,6 +86,14 @@ h3 {
 }
 
 
+.nav-logo {
+	float: left;
+}
+
+.nav-logo img {
+	max-width: 100px;
+}
+
 /* home style begins */
 
 .home-top {
@@ -246,6 +254,7 @@ button a {
 }
 
 .project-highlights-desc {
+	text-align: left;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	border-bottom: solid;
@@ -253,22 +262,83 @@ button a {
 }
 
 .project-highlights-desc p {
-	width: 75%;
-}
-
-.work-category h1 {
-	font-weight: 400;
-	font-size: 40px;
-	text-align: left;
-	margin-top: 16px;
-	padding-top: 16px;
+	width: 100%;
 }
 
 .work-category {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
 
+.work-category img {
+	width: 30%;
+	padding: 16px;
+	margin-top: 16px;
 }
 
 /* end of project highlights */
+
+/* writing highlights */
+
+.writing-examples {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.writing-examples .the-rapport-room {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	
+}
+
+.writing-examples .writing-organization {
+	padding-left: 100px;
+}
+
+.writing-examples .writing-list {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding-left: 250px;
+	padding-top: 36px;
+
+}
+
+.writing-examples h1 {
+	font-size: 30px;
+}
+
+.writing-examples p {
+	margin: 5px;
+	font-weight: 800;
+}
+
+.writing-examples a {
+	text-decoration: none;
+}
+
+.writing-examples .capa-blog {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+}
+
+
+
+
+/* end of writing highlights */
 
 /* moments gallery begins */
 
