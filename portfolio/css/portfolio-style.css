@@ -3,7 +3,7 @@
 
 
 body {
-	background-color: rgb(251, 252, 246);
+	background-color: whitesmoke;
 
 }
 
@@ -50,7 +50,7 @@ p {
 }
 
 p a {
-	color: rgb(112, 130, 56);
+	color: rgb(165, 160, 74);
 	text-decoration: underline;
 }
 
@@ -129,7 +129,7 @@ h3 {
 
 .home-image-grid {
 	margin: 0;
-	max-width: 100%;
+	max-width: 1920px;
 	--gap: 16px;
 	--num-cols: 3;
 	--row-height: 300px;
@@ -143,7 +143,7 @@ h3 {
 
 	padding-left: 0;
 	padding-right: 0;
-	padding-bottom: 0;
+	padding-bottom: 16px;
 }
 
 .home-image-grid img {
@@ -162,13 +162,11 @@ h3 {
 
 
 .career-desc2 {
-	background-color: rgb(165, 160, 74);
 	margin-top: 16px;
 	padding-left: 16px;
 	padding-top: 80px;
 	padding-bottom: 50px;
 	display: flex;
-
 }
 
 .career-desc2 .statement-and-button {
@@ -183,7 +181,7 @@ h3 {
 	justify-content: flex-end;
 	align-items: flex-end;
 	position: relative;
-	width: 100%;
+	width: 450px;
 
 }
 
@@ -192,40 +190,51 @@ h3 {
 }
 
 .career-desc2 h2 {
-	color: rgb(251, 252, 246);
+	color: rgb(165, 160, 74);
 	margin-bottom: 10px;
 	margin-top: 0;
 }
 
 .career-desc2 p{
-	color: rgb(251, 252, 246);
+	color: rgb(165, 160, 74);
 	font-size: 24px;
 	max-width: 90%;
 	justify-content: center;
+	align-items: center;
 
 }
 
 button {
-	background-color: rgb(251, 252, 246);
+	background-color: whitesmoke;
 	margin: 3px;
 	padding: 12px;
 	min-width: 10rem;
 	max-width: 10%;
 	font-size: 12px;
 	border-radius: 0.1rem;
-	border-color: rgb(235, 160, 164);
+	border-color: rgb(165, 160, 74);
 	text-transform: uppercase;
 }
 
 button a {
-	color: rgb(235, 160, 164);
+	color: rgb(165, 160, 74);
 	text-decoration: none;
 }
 
 .quote {
 	text-align: center;
+	border-top: solid;
 	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
 	padding-top: 20px;
+}
+
+.quote h2 {
+	color: rgb(165, 160, 74);
+}
+
+.quote p {
+	color: rgb(165, 160, 74);
 }
 
 .quote-name {
@@ -236,48 +245,100 @@ button a {
 
 /* project highlights begins */
 
-.project-stamp{
+.project-highlights-content {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	padding: 50px;
+	background-color: rgb(165, 160, 74);
 }
 
-.project-highlights-headlines {
-	text-align: left;
+.work-category {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding-right: 50px;
 }
 
-.project-highlights-headlines h2 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-top: 16px;
-	padding-bottom: 0px;
+.work-category-headline h2 {
+	font-size: 2.5rem;
 }
+
+.work-category h2 {
+	margin-bottom: 10px;
+	margin-top: 25px;
+	font-weight: 800;
+	color: whitesmoke;
+}
+
+.work-category a {
+	text-decoration: none;
+}
+
+.work-category .project-writing a:hover h2{
+	color: rgb(124, 114, 76);
+}
+
+.work-category .project-strategy a:hover h2{
+	color: rgb(124, 114, 76);
+}
+
+.work-category .project-design a:hover h2{
+	color: rgb(124, 114, 76);
+}
+
+
 
 .project-highlights-desc {
 	text-align: left;
 	padding-top: 0px;
 	padding-bottom: 0px;
+	width: 50%;
+}
+
+.project-highlights-desc h2 {
+	color: whitesmoke;
+}
+
+.project-highlights-desc p {
+	color: whitesmoke;
+}
+
+.project-writing {
+	border-bottom: solid;
+	border-color: whitesmoke;
+}
+
+.project-strategy {
+	border-bottom: solid;
+	border-color: whitesmoke;
+}
+
+.project-design {
+	border-bottom: solid;
+	border-color: whitesmoke;
+}
+
+/* end of project highlights */
+
+.highlight-title {
+	display: flex;
+	justify-content: center;
 	border-bottom: solid;
 	border-color: rgb(165, 160, 74);
 }
 
-.project-highlights-desc p {
-	width: 100%;
+.process-list ul li {
+	list-style: none;
 }
 
-.work-category {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.process-list {
+	width: 95%;
+	padding-bottom: 20px;
 }
 
-.work-category img {
-	width: 30%;
-	padding: 16px;
-	margin-top: 16px;
+.farm-slidedeck {
+	padding-bottom: 30px;
 }
-
-/* end of project highlights */
 
 /* writing highlights */
 
@@ -288,32 +349,29 @@ button a {
 	align-items: flex-start;
 }
 
-.writing-examples .the-rapport-room {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	align-content: center;
-	padding-bottom: 30px;
-	border-bottom: solid;
-	border-color: rgb(165, 160, 74);
-	
-}
-
 .writing-examples .writing-organization {
-	padding-left: 100px;
+	width: 75%;
+	padding-top: 30px;
+	margin-top: 0px;
 }
 
 .writing-examples .writing-list {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	padding-left: 250px;
-	padding-top: 36px;
+	padding-left: 150px;
+	padding-top: 30px;
+	width: 75%;
 
 }
 
 .writing-examples h1 {
 	font-size: 30px;
+}
+
+.writing-examples .writing-organization h1 {
+	text-align: left;
+	padding-left: 150px;
 }
 
 .writing-examples p {
@@ -325,6 +383,40 @@ button a {
 	text-decoration: none;
 }
 
+.writing-examples .writing-list p {
+	width: 100%;
+}
+
+.writing-examples .writing-organization a h1 {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.writing-examples .writing-organization a:hover h1{
+	color: rgb(124, 114, 76);
+}
+
+.writing-examples .writing-list a:hover p{
+	color: rgb(124, 114, 76);
+}
+
+.writing-examples .writing-year h1 {
+	margin-top: 0px;
+	padding-top: 30px;
+}
+
+
+.writing-examples .the-rapport-room {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
 .writing-examples .capa-blog {
 	display: flex;
 	flex-direction: row;
@@ -333,10 +425,7 @@ button a {
 	padding-bottom: 30px;
 	border-bottom: solid;
 	border-color: rgb(165, 160, 74);
-}
-
-.writing-examples .capa-blog .writing-list {
-	padding-left: 343px;
+	width: 100%;
 }
 
 .writing-examples .nemi-teas {
@@ -345,39 +434,268 @@ button a {
 	align-items: flex-start;
 	align-content: center;
 	padding-bottom: 30px;
+	margin-bottom: 30px;
 	border-bottom: solid;
 	border-color: rgb(165, 160, 74);
+	width: 100%;
 }
 
-.writing-examples .nemi-teas .writing-list {
-	padding-left: 347px;
+.back-next-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
-
 
 
 
 /* end of writing highlights */
 
+/* start of strategy highlights */
+
+.strategy-examples {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.strategy-examples .strategy-preview {
+	width: 50%;
+}
+
+.strategy-examples .strategy-desc {
+	padding-left: 150px;
+	width: 75%;
+}
+
+.strategy-examples h1 {
+	font-size: 30px;
+	margin-top: 0px;
+
+}
+
+.strategy-examples .strategy-preview h1 {
+	text-align: left;
+	padding-left: 100px;
+}
+
+.strategy-examples .strategy-preview a {
+	text-decoration: none;
+}
+
+.strategy-examples img {
+	width: 250px;
+	padding-top: 16px;
+	padding-left: 100px;
+}
+
+.strategy-examples .steak-and-shake {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+.strategy-examples .zero-hunger {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+.strategy-examples .yellowdog-bookshop {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+.strategy-examples .deathwish-coffee {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+.strategy-examples .farm-bureau {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+/* end of strategy highlights */
+
+.deathwish-presentation h2 {
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+}
+
+.deathwish-brand-guidelines {
+	display: flex;
+	flex-direction: row;
+}
+
+.deathwish-brand-guidelines img {
+	width: 45%;
+	margin: 25px;
+}
+
+.print-ad {
+	display: flex;
+	flex-direction: row;
+}
+
+.print-ad img {
+	width: 30%;
+	margin: 16px;
+}
+
+.deathwish-web img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.zhc-poster {
+	padding-bottom: 30px;
+}
+
+.zhc-poster img {
+	width: 100%;
+	border: solid;
+	border-color: black;
+}
+
+/* start of design highlights */
+
+
+.design-examples {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.design-examples .design-preview {
+	width: 50%;
+}
+
+.design-examples .design-desc {
+	width:75%;
+	padding-left: 200px;
+}
+
+.design-examples h1 {
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+.design-examples img {
+	width: 100%;
+	padding-top: 16px;
+	padding-left: 100px;
+}
+
+.design-examples .heart-prints {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+.design-examples .grandpa-illustration {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+.design-examples .hero-portrait {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+.design-examples .rapport-room {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: center;
+	padding-bottom: 30px;
+	border-bottom: solid;
+	border-color: rgb(165, 160, 74);
+	width: 100%;
+}
+
+.back-next-button {
+	padding-top: 30px;
+}
+
+/* end of design highlights */
+
 /* moments gallery begins */
 
 .gallery-text {
-	border-bottom: solid;
+	width: 90%;
+	padding-left: 40px;
 }
 
 .gallery {
 	margin: 10px 0px 10px 0px;
+	padding-left: 30px;
 }
 
 .gallery img {
 	transition: 1s;
 	padding: 8px;
-	width: 200;
+	width: 30%;
 }
 
 .gallery img:hover {
 	filter: drop-shadow(5px 5px 10px black);
 	filter: grayscale(100%);
 	transform: scale(1.1);
+}
+
+.gallery .short {
+
+}
+
+.gallery .medium {
 
 }
 
@@ -393,17 +711,29 @@ button a {
 .about-image-grid {
 	display: flex;
 	justify-content: center;
-	margin-top: 30px;
-	margin-bottom: 40px;
+	margin: 20px;
 }
 
 .about-image-grid img {
-	max-width: 500px;
-	max-height: 800px;
+	max-width: 600px;
+	max-height: 500px;
 	padding-top: 10px;
 	padding-bottom: 20px;
-
 }
+
+.about-image-grid .buda img{
+	padding-top: 200px;
+	padding-left: 50px;
+	max-width: 200px;
+}
+
+.about-image-grid .coffee img{
+	padding-top: 50px;
+	padding-right: 50px;
+	max-width: 200px;
+}
+
+
 
 .arrow {
 	padding-top: 10px;
@@ -462,7 +792,6 @@ button a {
 .about-container p {
 	margin-bottom: 2px;
 	padding-bottom: 2px;
-
 }
 
 .sign-off {
