@@ -683,6 +683,7 @@ button a {
 	transition: 1s;
 	padding: 8px;
 	width: 30%;
+	vertical-align: top;
 }
 
 .gallery img:hover {
@@ -691,12 +692,11 @@ button a {
 	transform: scale(1.1);
 }
 
-.gallery .short {
-
-}
-
-.gallery .medium {
-
+.gallery img a {
+	display: flex;
+	flex-wrap: row-wrap;
+	align-items: flex-start;
+	align-content: stretch;
 }
 
 /* end of moments gallery*/
