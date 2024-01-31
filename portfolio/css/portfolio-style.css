@@ -85,39 +85,6 @@ h3 {
 
 }
 
-@media screen (max-width: 480px) {
-
-	nav {
-	max-width: 100%;
-	font-size: 1rem;
-}
-
-	nav ul {
-		display: flex;
-		align-items: stretch;
-		flex-direction: column;
-		justify-content: space-between;
-		margin: 0;
-		padding: 0;
-		border-radius: 0.5rem;
-}
-	
-	nav ul li {
-		flex-flow: row-wrap;
-		list-style-type: none;
-		padding: 0.1rem;
-		text-align: center;
-		margin-top: 0.15rem;
-	}
-
-	nav ul li a {
-		text-decoration: none;
-		text-transform: uppercase;
-	}
-
-
-}
-
 .nav-logo {
 	float: left;
 }
@@ -1046,7 +1013,70 @@ button a {
 /* end of footer */
 
 
+@media screen (max-width: 480px) {
 
+	nav {
+		max-width: 100%;
+		font-size: 1rem;
+	}
+
+	nav ul {
+		display: flex;
+		align-items: stretch;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+		border-radius: 0.5rem;
+	}
+	
+	nav ul li {
+		flex-flow: row-wrap;
+		list-style-type: none;
+		padding: 0.1rem;
+		text-align: center;
+		margin-top: 0.15rem;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+
+	main {
+		width: 100%;
+		font-size: 16px;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 16px;
+	}
+
+	h1 {
+		font-weight: 600;
+		font-size: 30px;
+	}
+
+	h2 {
+		font-weight: 450;
+		font-size: 24px;
+	}
+
+	h3 {
+		font-weight: 450;
+		font-size: 20px;
+	}
+
+	.nav-logo { 
+
+	 }
+
+	 .home-top {
+	 	margin
+	 }
+
+}
 
 
 
