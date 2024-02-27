@@ -1055,7 +1055,7 @@ button a {
 	}
 
 	p {
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 20px;
 	}
 
@@ -1257,6 +1257,7 @@ button a {
 	.writing-examples .writing-list {
 		display: flex;
 		padding-top: 20px;
+		padding-left: 0px;
 	}
 
 	.writing-examples .the-rapport-room {
